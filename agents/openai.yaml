@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ecommerce VOC Insight"
+  short_description: "Turn ecommerce reviews and Q&A into an operating report"
+  default_prompt: "Use $ecom-voc-insight to generate an ecommerce VOC operating report from my review and Q&A exports."
+
+policy:
+  allow_implicit_invocation: true
