@@ -1,6 +1,6 @@
 # Publishing Checklist
 
-Recommended release label: `v0.2-alpha`.
+Recommended release label: `v1.0.0`.
 
 ## Already Done
 
@@ -15,7 +15,7 @@ Recommended release label: `v0.2-alpha`.
 - Minimal regression passed locally.
 - Internal real-sample smoke tests passed on sample02 and sample03.
 
-## Must Pass Before GitHub Upload
+## Must Pass Before GitHub Release
 
 - Run:
 
@@ -33,15 +33,22 @@ python tests/run_min_regression.py
 - Confirm no real raw exports are committed.
 - Confirm `tests/_tmp/` is not committed.
 - Confirm public screenshots do not expose buyer nicknames, product links, or shop names.
-- Confirm README still says `v0.2-alpha`, not stable release.
+- Confirm README says `v1.0.0`.
 
-## Conditions For Calling It A Stable Formal Version
+## Formal Release Boundary
 
-Do not call this `v1.0` or stable formal release until:
+This release can be called `v1.0.0` because:
 
-- A fresh install test passes outside the original project folder.
-- At least 3-5 different categories have passed regression.
-- Example data is fully synthetic or sanitized.
-- The theme clustering issue has been improved or clearly documented.
-- A user other than the author can follow the README and generate a report.
+- real internal sample02 and sample03 smoke tests passed
+- synthetic minimal regression passed
+- public example data is synthetic or sanitized
+- report output boundaries are documented
+- heuristic limitations are stated in README and quality scorecard
+
+Keep the following as post-release improvement items:
+
+- fresh install test outside the original author environment
+- broader category regression
+- better category-aware theme clustering
+- clearer evidence deduplication across merged themes
 

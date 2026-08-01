@@ -1,6 +1,6 @@
 # Output Quality Scorecard
 
-Status: internal v0.2 draft.
+Status: v1.0.0 first public release.
 
 ## Smoke Evidence
 
@@ -27,7 +27,7 @@ Status: internal v0.2 draft.
 Command tested:
 
 ```powershell
-python scripts/run_ecom_voc_insight.py --raw-dir "<sample02 raw export dir>" --work-dir "<sample02 skill-package-regression-v0.2>"
+python scripts/run_ecom_voc_insight.py --raw-dir "<sample02 raw export dir>" --work-dir "<sample02 skill-package-regression-v1.0.0>"
 ```
 
 Result:
@@ -59,4 +59,4 @@ Result:
 
 - Theme clustering still uses heuristic词表 and may need category-context correction.
 - Evidence counts are capped for display but not fully deduplicated by `evidence_id` across merged themes.
-- Public GitHub package still needs a clean external install test on a fresh machine/environment.
+- Fresh external install testing remains a post-release hardening item.

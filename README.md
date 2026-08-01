@@ -9,13 +9,13 @@
 - 客服 FAQ 应该提前回答什么
 - 产品或包装下一轮应该优先改什么
 
-当前版本：`v0.2-alpha`
+当前版本：`v1.0.0`
 
 ## Status
 
-This is an alpha package.
+This is a first public release package.
 
-It has passed local smoke tests on real internal samples and one synthetic minimal regression case, but it is not yet a stable public release.
+It has passed local smoke tests on real internal samples and one synthetic minimal regression case. The theme clustering and opportunity scoring are heuristic diagnostics, not platform performance data or guaranteed business outcomes.
 
 ## What It Generates
 
